@@ -7,7 +7,7 @@
 
 That's all! Now you can use attributes to automate some tasks:
 ```CSharp
-using FindViewById;
+using KiDev.AndroidAutoFinder;
 using static TestApp.Resource;
 
 namespace TestApp;
