@@ -2,10 +2,10 @@
 ## About
 .NET Source generator for Android projects
 ## Using
-1) Install - ~~This package is available on NuGet: `dotnet add package ...`~~
+1) Install - This package is available on NuGet: `dotnet add package KiDev.AndroidAutoFinder`
 2) Mark your **Activity** class as `partial`
 
-That's all! Now you can use attributes to automate some code:
+That's all! Now you can use attributes to automate some tasks:
 ```CSharp
 using FindViewById;
 using static TestApp.Resource;
