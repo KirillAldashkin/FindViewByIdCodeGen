@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "FindViewById.CodeGen": {
+      "commandName": "Project"
+    },
+    "SourceGenerator": {
+      "commandName": "DebugRoslynComponent",
+      "targetProject": "..\\TestApp\\TestApp.csproj"
+    }
+  }
+}
