@@ -2,7 +2,7 @@
 global using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System.Text;
 
-namespace FindViewById.CodeGen;
+namespace KiDev.AndroidAutoFinder.CodeGen;
 
 [Generator]
 public class FindViewByIdCodeGen : ISourceGenerator

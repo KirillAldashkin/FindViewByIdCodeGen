@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace FindViewById.CodeGen;
+namespace KiDev.AndroidAutoFinder.CodeGen;
 
 static class Utils
 {

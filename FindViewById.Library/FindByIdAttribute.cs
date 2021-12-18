@@ -1,4 +1,4 @@
-﻿namespace FindViewById;
+﻿namespace KiDev.AndroidAutoFinder;
 
 /// <summary>
 /// Indicates that this element must be found on the <c>View</c>.

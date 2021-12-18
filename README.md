@@ -1,4 +1,4 @@
-# FindViewById
+# KiDev.AndroidAutoFinder
 ## About
 .NET Source generator for Android projects
 ## Using

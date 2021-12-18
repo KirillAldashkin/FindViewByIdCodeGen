@@ -1,4 +1,4 @@
-﻿namespace FindViewById.CodeGen;
+﻿namespace KiDev.AndroidAutoFinder.CodeGen;
 
 class MySyntaxReceiver : ISyntaxContextReceiver
 {

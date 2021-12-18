@@ -1,4 +1,4 @@
-using FindViewById;
+using KiDev.AndroidAutoFinder;
 using static TestApp.Resource;
 
 namespace TestApp;

@@ -1,4 +1,4 @@
-﻿namespace FindViewById.CodeGen;
+﻿namespace KiDev.AndroidAutoFinder.CodeGen;
 
 // Information about class need for codegen
 class ClassToGen
@@ -44,5 +44,5 @@ class ClassToGen
     // Checks whether specified class should be added to codegen
     public static bool Check(ITypeSymbol classSym) => classSym.GetAttributes().Any(CheckAttribute);
     static bool CheckAttribute(AttributeData attrib) => 
-        attrib.AttributeClass.ToDisplayString() == "FindViewById.SetViewAttribute";
+        attrib.AttributeClass.ToDisplayString() == "KiDev.AndroidAutoFinder.SetViewAttribute";
 }

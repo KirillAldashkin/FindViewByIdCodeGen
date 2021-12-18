@@ -6,7 +6,11 @@
     <ApplicationId>ru.kidev.findviewgentestapp</ApplicationId>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="KiDev.AndroidAutoFinder" Version="0.0.1-test" />
+  <ItemGroup Condition="$(LibType)==Local">
+    <ProjectReference Include="..\FindViewById.Library\FindViewById.Library.csproj" />
+    <ProjectReference Include="..\FindViewById.CodeGen\FindViewById.CodeGen.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+  </ItemGroup>
+  <ItemGroup Condition="$(LibType)!=Local">
+    <PackageReference Include="KiDev.AndroidAutoFinder" Version="1.0.2" />
   </ItemGroup>
 </Project>

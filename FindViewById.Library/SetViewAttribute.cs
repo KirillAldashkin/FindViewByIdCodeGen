@@ -1,4 +1,4 @@
-﻿namespace FindViewById;
+﻿namespace KiDev.AndroidAutoFinder;
 
 /// <summary>
 /// Specifies that a specific <c>ContentView</c> needs to be set in this <c>Activity</c>.

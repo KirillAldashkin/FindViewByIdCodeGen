@@ -1,7 +1,7 @@
-## FindViewById
+## KiDev.AndroidAutoFinder
 .NET Source generator for Android projects
 ```CSharp
-using FindViewById;
+using KiDev.AndroidAutoFinder;
 using static TestApp.Resource;
 
 namespace TestApp;

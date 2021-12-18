@@ -1,4 +1,4 @@
-﻿namespace FindViewById.CodeGen;
+﻿namespace KiDev.AndroidAutoFinder.CodeGen;
 
 // Information about field need for codegen
 class FieldToGen
@@ -25,5 +25,5 @@ class FieldToGen
     // Checks whether specified field should be added to codegen
     public static bool Check(IFieldSymbol fieldSym) => fieldSym.GetAttributes().Any(CheckAttribute);
     static bool CheckAttribute(AttributeData attrib) => 
-        attrib.AttributeClass.ToDisplayString() == "FindViewById.FindByIdAttribute";
+        attrib.AttributeClass.ToDisplayString() == "KiDev.AndroidAutoFinder.FindByIdAttribute";
 }
