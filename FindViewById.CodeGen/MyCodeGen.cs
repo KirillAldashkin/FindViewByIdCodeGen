@@ -5,7 +5,7 @@ using System.Text;
 namespace KiDev.AndroidAutoFinder.CodeGen;
 
 [Generator]
-public class FindViewByIdCodeGen : ISourceGenerator
+public class MyCodeGen : ISourceGenerator
 {
     public void Execute(GeneratorExecutionContext context)
     {

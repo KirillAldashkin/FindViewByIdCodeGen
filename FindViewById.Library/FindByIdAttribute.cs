@@ -1,7 +1,7 @@
 ﻿namespace KiDev.AndroidAutoFinder;
 
 /// <summary>
-/// Indicates that this element must be found on the <c>View</c>.
+/// Specifies that this element needs to be found using the specified ID.
 /// </summary>
 [AttributeUsage(AttributeTargets.Field, Inherited = false, AllowMultiple = false)]
 public class FindByIdAttribute : Attribute

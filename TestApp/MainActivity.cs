@@ -1,3 +1,4 @@
+using Android.Graphics;
 using KiDev.AndroidAutoFinder;
 using static TestApp.Resource;
 
@@ -10,6 +11,7 @@ public partial class MainActivity : Activity
     [FindById(Id.number_a)] EditText firstNumber;
     [FindById(Id.number_b)] EditText secondNumber;
     [FindById(Id.result_n)] TextView result;
+    [FindById(Drawable.test_image)] Bitmap bitmap;
 
     void AfterOnCreate()
     {

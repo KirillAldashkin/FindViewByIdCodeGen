@@ -2,7 +2,7 @@
 
 class MySyntaxReceiver : ISyntaxContextReceiver
 {
-    public List<ClassToGen> Classes = new(); // Classes for codegen found by this receiver
+    public List<ClassToGen> Classes { get; private set; } = new(); // Classes for codegen found by this receiver
 
     // Returns class for specified symbol it if it already exists,
     // otherwise adds new class for specified symbol and returns it
