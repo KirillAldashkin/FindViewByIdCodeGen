@@ -1,30 +1,31 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <IsRoslynComponent>true</IsRoslynComponent>
-    <LangVersion>preview</LangVersion>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>KiDev.AndroidAutoFinder.CodeGen</RootNamespace>
-    <!-- NuGet package parameters -->
-    <PackageId>KiDev.AndroidAutoFinder</PackageId>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageTags>codegen findviewbyid setcontentview android maui xamarin</PackageTags>
-    <PackageProjectUrl>https://github.com/KirillAldashkin/FindViewByIdCodeGen</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/KirillAldashkin/FindViewByIdCodeGen</RepositoryUrl>
-    <RepositoryType>GitHub</RepositoryType>
-    <Authors>Kirill Aldashkin</Authors>
-    <Version>1.0.2</Version>
-    <Description>Code generator for Android .NET projects</Description>
-    <PackageReadmeFile>package-readme.md</PackageReadmeFile>
-	<IncludeBuildOutput>false</IncludeBuildOutput>
-  </PropertyGroup>
-  <ItemGroup>
-    <None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
-    <None Include="$(MSBuildProjectDirectory)\..\FindViewById.Library\bin\$(Configuration)\$(TargetFramework)\FindViewById.Library.dll" Pack="true" PackagePath="lib/$(TargetFramework)" Visible="false" />
-    <None Include="package-readme.md" Pack="true" PackagePath="\" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.0.1" PrivateAssets="all" />
-    <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.3" PrivateAssets="all" />
-  </ItemGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<IsRoslynComponent>true</IsRoslynComponent>
+		<Nullable>enable</Nullable>
+		<LangVersion>preview</LangVersion>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<RootNamespace>KiDev.AndroidAutoFinder.CodeGen</RootNamespace>
+		<!-- NuGet package parameters -->
+		<PackageId>KiDev.AndroidAutoFinder</PackageId>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageTags>codegen findviewbyid setcontentview android maui xamarin</PackageTags>
+		<PackageProjectUrl>https://github.com/KirillAldashkin/FindViewByIdCodeGen</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/KirillAldashkin/FindViewByIdCodeGen</RepositoryUrl>
+		<RepositoryType>GitHub</RepositoryType>
+		<Authors>Kirill Aldashkin</Authors>
+		<Version>2.0.0-pre1</Version>
+		<Description>Code generator for Android .NET projects</Description>
+		<PackageReadmeFile>package-readme.md</PackageReadmeFile>
+		<IncludeBuildOutput>false</IncludeBuildOutput>
+	</PropertyGroup>
+	<ItemGroup>
+		<None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
+		<None Include="$(MSBuildProjectDirectory)\..\FindViewById.Library\bin\$(Configuration)\$(TargetFramework)\FindViewById.Library.dll" Pack="true" PackagePath="lib/$(TargetFramework)" Visible="false" />
+		<None Include="package-readme.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.0.1" PrivateAssets="all" />
+		<PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.3" PrivateAssets="all" />
+	</ItemGroup>
 </Project>

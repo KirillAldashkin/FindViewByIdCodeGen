@@ -17,13 +17,13 @@
                 android:layout_height="wrap_content"
                 android:inputType="text"
                 android:hint="@string/first_number"
-                android:id="@+id/number_a"/>
+                android:id="@+id/leftNumberInput"/>
             <EditText
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:inputType="text"
                 android:hint="@string/second_number"
-                android:id="@+id/number_b"/>
+                android:id="@+id/rightNumberInput"/>
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
@@ -34,7 +34,7 @@
                 android:layout_weight="2"
                 android:text="@string/result"
                 android:textAlignment="center"
-                android:id="@+id/result_n"/>
+                android:id="@+id/sumTextView"/>
         </TableRow>
     </TableLayout>
 </LinearLayout>
